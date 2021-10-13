@@ -2,7 +2,8 @@ import './styles.css'
 import { ClickCounter } from './clickCounter'
 
 export const App = () => {
-  const andre = 'asdf'
+  const andre = 'asddsdf'
+  console.log(andre)
   return (
     <>
       <h1>
