@@ -1,0 +1,76 @@
+.starting {
+  margin: 3rem auto;
+  text-align: center;
+  animation-name: moveInLeft;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.starting h1 {
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-top: 2rem;
+}
+
+.starting h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+.link {
+  margin-top: 6rem;
+  padding: 3rem;
+  text-align: center;
+  font-size: 2rem;
+  animation-name: moveInRight;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+.link button {
+  cursor: pointer;
+  font: inherit;
+  color: white;
+  background-color: #5d5f9b;
+  border: 1px solid #5d5f9b;
+  border-radius: 4px;
+  padding: 1rem 3rem;
+}
+
+.link button:hover {
+  background-color: #873abb;
+  border-color: #873abb;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  80% {
+    transform: translateX(1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
